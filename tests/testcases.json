@@ -1,0 +1,47 @@
+[
+  {
+    "name": "SendXNS",
+    "tx": {"jsonrpc":"2.0","id":1,"method":"contract.call","params":{"callSite":"member.transfer","callParams":{"amount":"24000000005","toMemberReference":"insolar:1AAEAATjWvxVC3DFEBqINu7JSKWxlcb_uJo7QdAHrcP8"},"reference":"insolar:1AAEAAY2zkW3pOTCIlYg6XqhWLR32AAeBpTKZ3vLdFhE","publicKey":"-----BEGIN PUBLIC KEY-----\nMFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEc+Vs4y+XWE77LR0QL1e1wCOFePFEHJIB\ndsPWPKMH5zGRhRWV1HCJXajENCV2bdG/YKKEOAzTdE5BGXNg2dRQpQ==\n-----END PUBLIC KEY-----","seed":"rOpiqgDHHDmr2PfI5UzZiWpjRyDMoFtBNFoOwyC+yJ8="}},
+    "parsingErr": "No error",
+    "validationErr": "No error",
+    "expected": [
+      "0 | Command : Send XNS",
+      "1 | Amount : 2.4000000005",
+      "2 | To [1/2] : insolar:1AAEAATjWvxVC3DFEBqINu7JSKWxlcb",
+      "2 | To [2/2] : _uJo7QdAHrcP8"
+    ]
+  },
+  {
+    "name": "SendMicroXNS",
+    "tx": {"jsonrpc":"2.0","id":1,"method":"contract.call","params":{"callSite":"member.transfer","callParams":{"amount":"5","toMemberReference":"insolar:1AAEAATjWvxVC3DFEBqINu7JSKWxlcb_uJo7QdAHrcP8"},"reference":"insolar:1AAEAAY2zkW3pOTCIlYg6XqhWLR32AAeBpTKZ3vLdFhE","publicKey":"-----BEGIN PUBLIC KEY-----\nMFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEc+Vs4y+XWE77LR0QL1e1wCOFePFEHJIB\ndsPWPKMH5zGRhRWV1HCJXajENCV2bdG/YKKEOAzTdE5BGXNg2dRQpQ==\n-----END PUBLIC KEY-----","seed":"rOpiqgDHHDmr2PfI5UzZiWpjRyDMoFtBNFoOwyC+yJ8="}},
+    "parsingErr": "No error",
+    "validationErr": "No error",
+    "expected": [
+      "0 | Command : Send XNS",
+      "1 | Amount : 0.0000000005",
+      "2 | To [1/2] : insolar:1AAEAATjWvxVC3DFEBqINu7JSKWxlcb",
+      "2 | To [2/2] : _uJo7QdAHrcP8"
+    ]
+  },
+  {
+    "name": "DepositTransfer",
+    "tx": {"jsonrpc":"2.0","id":1,"method":"contract.call","params":{"callSite":"deposit.transfer","callParams":{"amount":"2400000000","toMemberReference":"insolar:1AAEAATjWvxVC3DFEBqINu7JSKWxlcb_uJo7QdAHrcP8"},"reference":"insolar:1AAEAAY2zkW3pOTCIlYg6XqhWLR32AAeBpTKZ3vLdFhE","publicKey":"-----BEGIN PUBLIC KEY-----\nMFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEc+Vs4y+XWE77LR0QL1e1wCOFePFEHJIB\ndsPWPKMH5zGRhRWV1HCJXajENCV2bdG/YKKEOAzTdE5BGXNg2dRQpQ==\n-----END PUBLIC KEY-----","seed":"rOpiqgDHHDmr2PfI5UzZiWpjRyDMoFtBNFoOwyC+yJ8="}},
+    "parsingErr": "No error",
+    "validationErr": "No error",
+    "expected": [
+      "0 | Command : Withdraw from deposit",
+      "1 | Amount : 0.2400000000",
+      "2 | To [1/2] : insolar:1AAEAATjWvxVC3DFEBqINu7JSKWxlcb",
+      "2 | To [2/2] : _uJo7QdAHrcP8"
+    ]
+  },
+  {
+    "name": "MemberCreate",
+    "tx": {"jsonrpc":"2.0","id":1,"method":"contract.call","params":{"callSite":"member.migrationCreate","publicKey":"-----BEGIN PUBLIC KEY-----\nMFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEc+Vs4y+XWE77LR0QL1e1wCOFePFEHJIB\ndsPWPKMH5zGRhRWV1HCJXajENCV2bdG/YKKEOAzTdE5BGXNg2dRQpQ==\n-----END PUBLIC KEY-----","seed":"rOpiqgDHHDmr2PfI5UzZiWpjRyDMoFtBNFoOwyC+yJ8="}},
+    "parsingErr": "No error",
+    "validationErr": "No error",
+    "expected": [
+      "0 | Command : Create Account"
+    ]
+  }
+]

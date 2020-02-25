@@ -1,0 +1,6 @@
+[submodule "src/ledger-xns-app"]
+	path = src/ledger-xns-app
+	url = https://github.com/insolar/ledger-xns-app.git
+[submodule "nanos-secure-sdk"]
+	path = nanos-secure-sdk
+	url = https://github.com/LedgerHQ/nanos-secure-sdk.git

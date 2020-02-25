@@ -1,0 +1,15 @@
+on: [push]
+
+jobs:
+  build_firmware:
+    runs-on: ubuntu-latest
+    name: Run tests in docker
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+            submodules: true
+      - name: Submodule update
+        run: git submodule update --init --force --recursive --depth=1
+      - name: google tests
+        run: docker build .
+        

@@ -1,0 +1,10 @@
+[requires]
+gtest/1.10.0
+fmt/6.1.2
+jsoncpp/1.9.2
+
+[options]
+gtest:shared=False
+
+[generators]
+cmake_find_package
