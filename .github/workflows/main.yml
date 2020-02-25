@@ -7,6 +7,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v1
+        with:
             submodules: true
       - name: Submodule update
         run: git submodule update --init --force --recursive --depth=1
